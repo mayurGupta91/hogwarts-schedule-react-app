@@ -1,0 +1,75 @@
+module.exports = {
+    env: {
+        node: true,
+        browser: true,
+        es2021: true,
+    },
+    extends: ['eslint:recommended', 'plugin:react/recommended'],
+    overrides: [],
+    parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+    },
+    plugins: ['react', 'eslint-plugin-prettier'],
+    rules: {
+        semi: 2,
+        'no-debugger': 'error',
+        strict: 0,
+        'no-console': 2,
+        indent: ['warn', 4, { SwitchCase: 1 }],
+        'max-len': ['warn', 400, { ignoreTemplateLiterals: true, ignoreStrings: true }],
+        'no-underscore-dangle': 'off',
+        'arrow-parens': [2, 'as-needed'],
+        'class-methods-use-this': 0,
+        'react/forbid-prop-types': 0,
+        'react/jsx-indent': ['error', 4],
+        'react/jsx-indent-props': [0, 4],
+        'react/prop-types': [2, { ignore: ['children'] }],
+        'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+        'import/no-extraneous-dependencies': 0,
+        'import/no-named-as-default': 0,
+        'no-mixed-operators': [
+            'error',
+            {
+                groups: [
+                    ['&', '|', '^', '~', '<<', '>>', '>>>'],
+                    ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+                    ['&&', '||'],
+                    ['in', 'instanceof'],
+                ],
+                allowSamePrecedence: true,
+            },
+        ],
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'jsx-a11y/no-noninteractive-element-interactions': 'off',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/mouse-events-have-key-events': 'off',
+        'react/no-array-index-key': 'off',
+        'prefer-template': 'off',
+        'react/no-danger': 'off',
+        camelcase: 'off',
+        'no-param-reassign': 'off',
+        'no-restricted-globals': 'off',
+        'react/jsx-no-bind': [
+            'error',
+            {
+                ignoreDOMComponents: true,
+                allowArrowFunctions: true,
+                ignoreRefs: true,
+                allowFunctions: true,
+                allowBind: true,
+            },
+        ],
+        'object-curly-newline': [
+            'error',
+            {
+                ObjectPattern: { multiline: true },
+            },
+        ],
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
+};
