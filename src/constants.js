@@ -1,24 +1,43 @@
 //constanst.js
 
+import Dumbledore from './images/Professor-Dumbledore.jpeg';
+import Minerva from './images/Minerva-McGonagall.jpeg';
+import Rubeus from './images/Rubeus-Hagrid.jpeg';
+import Alastor from './images/Alastor-Moody.jpeg';
+import Horace from './images/Horace-Slughorn.jpeg';
+import Severus from './images/Severus-Snape.jpeg';
+import Remus from './images/Remus-Lupin.jpeg';
+import Gilderoy from './images/Gilderoy-Lockhart.jpeg';
+import Harry_Potter from './images/Harry_Potter_poster.jpg';
+import Hermione_Granger from './images/Hermione_Granger_poster.jpg';
+import Ron_Weasley from './images/Ron_Weasley_poster.jpg';
+import Draco_Mal from './images/Draco_Mal.jpeg';
+import PadmaPatil from './images/PadmaPatil.png';
+import LunaLovegood from './images/LunaLovegood.jpeg';
+
 // Sample subjects data with professors and standyProfessor
 
 export const TEACHERS = {
     'Professor Dumbledore': {
         isHeadmaster: true,
+        imgSrc: Dumbledore,
     },
     'Minerva McGonagall': {
         isHeadmistress: true,
+        imgSrc: Minerva,
     },
     'Rubeus Hagrid': {
         standyProfessorFor: ['Potions Master'],
+        imgSrc: Rubeus,
     },
     'Alastor Moody': {
         standyProfessorFor: ['Defense Against the Dark Arts'],
+        imgSrc: Alastor,
     },
-    'Horace Slughorn': {},
-    'Severus Snape': {},
-    'Remus Lupin': {},
-    'Gilderoy Lockhart ': {},
+    'Horace Slughorn': { imgSrc: Horace },
+    'Severus Snape': { imgSrc: Severus },
+    'Remus Lupin': { imgSrc: Remus },
+    'Gilderoy Lockhart ': { imgSrc: Gilderoy },
 };
 
 // Sample student data with one subject
@@ -26,36 +45,42 @@ export const TEACHERS = {
 export const STUDENTS = [
     {
         name: 'Harry Potter',
+        imgSrc: Harry_Potter,
         subjects: {
             'Potions Master': 'Horace Slughorn',
         },
     },
     {
         name: 'Hermione Granger',
+        imgSrc: Hermione_Granger,
         subjects: {
             'Potions Master': '',
         },
     },
     {
         name: 'Ron Weasley',
+        imgSrc: Ron_Weasley,
         subjects: {
             'Potions Master': 'Severus Snape',
         },
     },
     {
         name: 'Draco Malfoy',
+        imgSrc: Draco_Mal,
         subjects: {
             'Potions Master': 'Horace Slughorn',
         },
     },
     {
         name: 'Padma Patil',
+        imgSrc: PadmaPatil,
         subjects: {
             'Potions Master': '',
         },
     },
     {
         name: 'Luna Lovegood',
+        imgSrc: LunaLovegood,
         subjects: {
             'Potions Master': 'Severus Snape',
         },

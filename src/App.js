@@ -32,13 +32,14 @@ const ScheduleTodayPage = () => {
     }, []);
 
     return (
-        <div className="App">
+        <div className="wrapper">
             <h1>Schedule Today</h1>
             <div style={{ display: 'flex' }}>
                 {/* Attendance Section */}
-                <div style={{ flex: 1, marginRight: 40, borderRight: '2px solid #000' }}>
+                <div style={{ flex: 1, marginRight: 60, borderRight: '2px solid #fff' }}>
                     <h2>Attendance</h2>
                     <AttendanceGrid
+                        teachers={TEACHERS}
                         teacherAttendance={teacherAttendance}
                         onAttendanceChange={handleTeacherAttendanceChange}
                     />
@@ -47,7 +48,7 @@ const ScheduleTodayPage = () => {
                 {/* Current Schedule Section */}
                 <div style={{ flex: 1, marginLeft: 20 }}>
                     <h2>Current Schedule</h2>
-                    <ScheduleGrid students={studentSubTeachers} />
+                    <ScheduleGrid teachers={TEACHERS} students={studentSubTeachers} />
                 </div>
             </div>
         </div>

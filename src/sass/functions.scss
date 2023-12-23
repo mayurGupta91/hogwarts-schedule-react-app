@@ -1,0 +1,7 @@
+@function rem($pixels) {
+    @return $pixels * 1vh;
+}
+
+@function rew($pixels) {
+    @return $pixels * 1vw;
+}
