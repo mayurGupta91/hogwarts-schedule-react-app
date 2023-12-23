@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleTodayPage Component renders ScheduleTodayPage component snapshot 1`] = `ShallowWrapper {}`;
