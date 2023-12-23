@@ -1,0 +1,53 @@
+{
+  "name": "hogwarts-schedule-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-syntax-flow": "^7.21.4",
+    "@babel/plugin-transform-react-jsx": "^7.21.0",
+    "@babel/preset-react": "^7.18.6",
+    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
+    "@testing-library/dom": "^9.2.0",
+    "enzyme": "^3.11.0",
+    "eslint": "^8.37.0",
+    "prettier": "^2.7.1",
+    "redux-mock-store": "^1.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write './src'",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
